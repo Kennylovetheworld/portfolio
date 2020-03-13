@@ -88,10 +88,25 @@ footer{
   text-align: center;
 }
 
+.footer-container{
+  border-top: 10px solid var(--minor-bg-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-container div {
+  border-top: 10px solid var(--minor-bg-color);
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
 .logo-area {
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
-  padding: 20px 5px; 
+  padding: 5px 10px; 
 }
 
 #logo{
@@ -105,7 +120,7 @@ footer{
 nav{
   background-color: var(--minor-bg-color);
   padding: 20px 0px; 
-  text-align: left;
+  text-align: right;
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
 }
@@ -204,6 +219,17 @@ header p{
     /*Your code here */
     /* See documentation for desktop view */ 
     grid-column: 2 / span 2;
+    }
+
+    .footer-container{
+      flex-direction: row;
+    }
+    
+    .footer-container div {
+      border-top: 10px solid var(--minor-bg-color);
+      width: auto;
+      margin: 10px 100px 10px 10px;
+      text-align: left;
     }
 
 }  /*End the media query*/
