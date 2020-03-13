@@ -1,0 +1,33 @@
+nav{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: LeftToRight 0.7s 0.3s linear forwards;
+    -webkit-animation: LeftToRight 0.7s 0.3s linear forwards;
+}
+
+nav li{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: LeftToRight 0.7s 0.7s linear forwards;
+    -webkit-animation: LeftToRight 0.7s 0.7s linear forwards;
+}
+
+#logo {
+    animation: SmallToLarge 0.7s linear forwards;
+    -webkit-animation: SmallToLarge 0.7s linear forwards;
+}
+
+@keyframes LeftToRight {
+    0%   {opacity: 0; left:-200px; padding-right: 0px;}
+    100% {opacity: 1; left:0px; padding-right: 20px;}
+}
+
+
+@keyframes SmallToLarge {
+    0%   {opacity: 0; transform: scale(0.1); transform-origin: 0,0;}
+    100% {opacity: 1; transform: scale(1); transform-origin: 0,0;}
+}

@@ -1,0 +1,59 @@
+  :root {
+    --main-bg-color: #000000;
+    --minor-bg-color: #fbf9ffcc;
+    --main-frt-color: #fbf9ffcc;
+  }
+
+.education{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: bottomToTop 25s -18s ease infinite forwards;
+    -webkit-animation: bottomToTop 25s -18s ease infinite forwards;
+}
+
+.mylove{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: bottomToTop 25s -13s ease infinite forwards;
+    -webkit-animation: bottomToTop 25s -13s ease infinite forwards;
+}
+
+.life{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: bottomToTop 25s -8s ease infinite forwards;
+    -webkit-animation: bottomToTop 25s -8s ease infinite forwards;
+}
+
+.project{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: bottomToTop 25s -3s ease infinite forwards;
+    -webkit-animation: bottomToTop 25s -3s ease infinite forwards;
+}
+
+.research{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: bottomToTop 25s 2s ease infinite forwards;
+    -webkit-animation: bottomToTop 25s 2s ease infinite forwards;
+}
+
+
+@keyframes bottomToTop {
+    0%   {opacity: 0; top: -100px;}
+    80%  {opacity: 0; top: -100px;}
+    85% {opacity: 1; top:0px;}
+    95% {opacity: 1; top:0px;}
+    100% {opacity: 0; top: 100px;}
+}

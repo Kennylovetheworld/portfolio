@@ -1,0 +1,23 @@
+header .name1, header .name2{
+    animation: FadeIn 2s 0s ease-out forwards;
+    -webkit-animation: FadeIn 2s 0s ease-out forwards;
+}
+
+@keyframes FadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.typing p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 18.5em; height: 1em;
+    animation: typing 3.7s steps(37, end);
+    word-break: break-all;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 18.5em; }
+}

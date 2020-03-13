@@ -1,0 +1,220 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+  --main-bg-color: #000000;
+  --minor-bg-color: #fbf9ffcc;
+  --main-frt-color: #acc9ff;
+}
+
+body{
+  background-color: var(--main-bg-color);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+}
+
+nav a{
+  color: var(--main-bg-color);
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+.skip a{
+  background: var(--main-frt-color);
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  /*Your code here - position relative to the parent */
+  position: absolute;
+  /*Your code here - place 40px higher */;
+  top: -40px;
+}
+
+/*Your code here*/
+/*Add the selector and rule to move the skip 
+link to the exact top of the page.*/
+.skip a:focus{
+  top: 0;
+}
+
+/*Your code here*/
+/*Add the selector and code to put a 2px black 
+border around all elements in focus.*/
+*:focus{
+  border: 2px solid var(--main-bg-color);
+}
+
+.container{
+  /*Your code here  */
+  /* See documentation for mobile view */
+  display: grid;
+  grid-template-columns: 100px 400px 100px;
+  grid-template-rows: 30px auto auto 100px;
+  row-gap: 15px;
+}
+
+footer{
+  background-color: var(--main-bg-color);
+  color: var(--main-frt-color);
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 4 / 5;   /*Can you rewrite it?*/
+  padding-top: 30px;
+  text-align: center;
+}
+
+.logo-area {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  padding: 20px 5px; 
+}
+
+#logo{
+  z-index: 9999;
+  filter: invert(100%);
+  position: absolute;
+  width: auto;
+  height: 30px;
+}
+
+nav{
+  background-color: var(--minor-bg-color);
+  padding: 20px 0px; 
+  text-align: left;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: var(--main-frt-color);
+  height: 400px;                /* Parallax effect */
+  
+  /* background-image: url("../images/header.jpg"); */
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+}
+
+header p{
+  color: var(--main-frt-color);
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.education, .mylove, .life, .project, .research{
+  /*Your code here */
+  /* See documentation for mobile view */
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  opacity: 0.9;
+}
+
+.education{
+
+}
+
+.mylove{
+
+}
+
+.life{
+
+}
+
+
+.project{
+
+}
+
+.research{
+
+}
+
+.text-block{
+  background-color: var(--minor-bg-color);
+  border: 10px solid var(--main-bg-color);
+  padding: 30px;
+  /*Your code here:*/
+  /*Align the content in the center */
+  justify-self: center;
+  align-self: center;
+}
+
+@media all and (min-width: 800px){
+  .container{
+    /*Your code here  */
+    /* See documentation for mobile view */
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 70px 300px 400px 100px;
+  }
+
+  .logo-area{
+    padding: 5px 5px;
+  }
+
+  #logo{
+    width: auto;
+    height: 70px;
+  }
+
+  nav{
+    background-color: var(--minor-bg-color);
+    text-align: right;
+    padding: 35px 0px;
+    align-self: center;
+  }
+
+  .education, .life, .research{
+  /*Your code here */
+  /* See documentation for desktop view */ 
+    grid-column: 3 / span 2;
+  }
+
+  .mylove, .project{
+    /*Your code here */
+    /* See documentation for desktop view */ 
+    grid-column: 2 / span 2;
+    }
+
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none;
+    transition: none;
+  }
+}
