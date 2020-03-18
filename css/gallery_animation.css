@@ -1,0 +1,27 @@
+.gallery-image{
+    position: relative;
+    left: 0%;
+    margin-left: REM(0);
+    opacity: 0;
+    animation: gallery-show 60s linear infinite forwards;
+    -webkit-animation: gallery-show 60s linear infinite forwards;
+}
+
+
+@keyframes gallery-show {
+    0% {opacity: 1; left: -5000px;}
+    5% {opacity: 1; left: -5000px;}
+    50% {opacity: 1; left: 0px;}
+    95% {opacity: 1; left: -5000px;}
+    100% {opacity: 1; left: -5000px;}
+}
+
+@media all and (min-width: 800px){
+    @keyframes gallery-show {
+        0% {opacity: 1; left: -4000px;}
+        5% {opacity: 1; left: -4000px;}
+        50% {opacity: 1; left: 0px;}
+        95% {opacity: 1; left: -4000px;}
+        100% {opacity: 1; left: -4000px;}
+    }
+}
