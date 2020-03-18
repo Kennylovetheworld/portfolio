@@ -11,13 +11,14 @@ header .name1, header .name2{
 .typing p{
     margin-left: auto;
     margin-right: auto;
-    width: 18.5em; height: 1em;
+    width: 18.0em; height: 1em;
     animation: typing 3.7s steps(37, end);
     word-break: break-all;
     overflow: hidden;
+    text-align: center;
 }
 
 @keyframes typing {
     from { width: 0; }
-    to { width: 18.5em; }
+    to { width: 18.0em; }
 }
