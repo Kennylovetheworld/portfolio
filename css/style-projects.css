@@ -153,41 +153,31 @@ nav{
   text-align: center;
 }
 
-.education, .mylove, .life, .project, .research{
-  /*Your code here */
-  /* See documentation for mobile view */
-  grid-column: 2 / 3;
+.projects-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-column: 1 / -1;
   grid-row: 3 / 4;
-  opacity: 0.9;
+  height: 800px;
+  overflow: hidden;
 }
 
-.education{
-
+.projects-list h2{
+  padding: 50px 0;
 }
 
-.mylove{
-
+.project-image{
+  position: absolute; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
+  width: 300px;
 }
 
-.life{
-
-}
-
-
-.project{
-
-}
-
-.research{
-
-}
-
-.text-block{
-  background-color: var(--minor-bg-color);
-  border: 10px solid var(--main-frt-color);
-  padding: 30px;
-  justify-self: center;
-  align-self: center;
+#ACO, #clothing{
+  filter: brightness(150%);
 }
 
 /* Style inputs */
@@ -271,18 +261,6 @@ input[type=submit] {
     align-self: center;
   }
 
-  .education, .life, .research{
-  /*Your code here */
-  /* See documentation for desktop view */ 
-    grid-column: 3 / span 2;
-  }
-
-  .mylove, .project{
-    /*Your code here */
-    /* See documentation for desktop view */ 
-    grid-column: 2 / span 2;
-    }
-
   .footer-container{
     flex-direction: row;
   }
@@ -294,6 +272,9 @@ input[type=submit] {
     text-align: left;
   }
 
+  .projects-list{
+    height: 400px;
+  }
 }  /*End the media query*/
 
 @media screen and (prefers-reduced-motion: reduce){
