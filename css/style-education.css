@@ -243,6 +243,22 @@ nav{
 }
 
 
+.parallax {
+  /* The image used */
+  background-image: url("../images/michigan-night.png");
+  z-index: -9999;
+  /* Set a specific height */
+  height: 1300px;
+  opacity: 0.1;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / -1;
+  grid-row: 2 / 4;
+}
+
 /* Footer Form */
 .LMM_container{
   flex-direction: column;
