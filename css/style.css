@@ -190,6 +190,22 @@ nav{
   align-self: center;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("../images/michigan-night.png");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+
 /* Style inputs */
 
 .LMM_container{
