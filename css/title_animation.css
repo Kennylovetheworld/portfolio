@@ -1,4 +1,4 @@
-.page-title .name1, .page-title .name2{
+.page-title{
     animation: FadeIn 2s 0s ease-out forwards;
     -webkit-animation: FadeIn 2s 0s ease-out forwards;
 }
