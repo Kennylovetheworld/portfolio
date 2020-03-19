@@ -115,7 +115,7 @@ footer{
 }
 
 #logo{
-  padding: 20px 0px;
+  padding: 5px 0px;
   z-index: 9999;
   filter: invert(100%);
   position: absolute;
